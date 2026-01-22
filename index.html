@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<ht lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,20 @@
 </head>
 <body>
     <header>
-        <h1>Clayton Dale Tambis</h1>
-        <p> Web Developer Intern</p>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Clayton Dale Tambis</h1>
+                <p> Web Developer Intern</p>
+            </div>
+            <div class="theme-controls">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <div class="click-counter">
+                    <span>Clicks: </span><span id="counter">0</span>
+                </div>
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -68,5 +80,7 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
